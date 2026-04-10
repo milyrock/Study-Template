@@ -1,3 +1,4 @@
+using Study.LabWork1.Features.Task1;
 using Study.LabWork1.Shared.Abstractions;
 
 namespace Study.LabWork1.Shared.Services;
@@ -10,7 +11,18 @@ public class RunService : IRunService
     /// <summary>
     /// Задание 1
     /// </summary>
-    public void RunTask1() => throw new NotImplementedException();
+    public void RunTask1()
+    {
+        MyVector a = new (1, 2);
+        MyVector b = new (3, 4);
+
+        Console.WriteLine($"сумма {a + b}");
+        Console.WriteLine($"длина {+a}");
+        Console.WriteLine($"вычитание {a - b}");
+        Console.WriteLine($"умножение {a * b}");
+        Console.WriteLine($"равенство {a == b}");
+        Console.WriteLine($"неравенство {a != b}");
+    }
 
     /// <summary>
     /// Задание 2
